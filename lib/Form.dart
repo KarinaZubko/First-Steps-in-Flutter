@@ -42,7 +42,7 @@ class FormScreenState extends State<FormScreen> {
                                 hintText: 'email@domain.com',
                                 labelText: 'Email',
   ),
-      keyboardType: TextInputType.visiblePassword,
+      keyboardType: TextInputType.emailAddress,
       validator: (String value) {
         if (value.isEmpty) {
           return 'Email is Required';
