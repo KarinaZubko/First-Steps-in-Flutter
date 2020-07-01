@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
-
+import 'Form.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -33,6 +33,15 @@ class MainVidgetState extends State<MainVidget> {
               title: Text('Test Task by Karina Z', style: TextStyle(fontWeight: FontWeight.bold, fontFamily: 'Consolas', fontSize: 36),),
               backgroundColor: Color(0xFFFDD835),
             ),
+          floatingActionButton: FloatingActionButton( 
+            child: Icon(Icons.navigate_next),
+            onPressed: (){
+              Navigator.push(context, MaterialPageRoute(
+                builder: (context) => FormScreen()
+              )
+            );
+          },
+          ),
           body: Stack(
           children: <Widget>[
           Center(
